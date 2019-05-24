@@ -1,0 +1,247 @@
+/**
+ * @file
+ * Presentation-specific styles.
+ */
+
+img {
+    display: block;
+}
+
+.fa-drupal {
+    color: #0678be;
+}
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.reveal a {
+    color: inherit;
+}
+
+.reveal ul {
+    font-size: 2em;
+    align-self: center;
+    justify-self: center;
+}
+@media (min-width: 1280px) {
+    .reveal ul {
+        width: calc(80% - 1em);
+    }
+}
+
+.reveal pre code {
+    background-color: #f8f8f8;
+    border: 1ex solid #f8f8f8;
+    font-size: 125%;
+    line-height: 1.1em;
+}
+
+.header .twitter {
+    margin-left: auto;
+    opacity: 0.5;
+}
+.header .twitter .fa-twitter {
+    color: inherit;
+}
+
+.reveal .slides section.title {
+    padding: 0;
+}
+.reveal .slides section.title .content {
+    grid-template-columns: auto;
+    grid-template-areas: "title" "description";
+}
+.slides .title .presentation-url {
+    grid-area: header;
+    text-align: right;
+    font-size: 0.8em;
+    align-self: center;
+    opacity: 0.5;
+}
+
+.reveal .slides section.tools {
+    height: calc(100vh - 8vmin);
+    margin: 4vmin;
+    width: calc(100vw - 8vmin);
+    color: #FFFFFF;
+    margin-left: 22vw;
+    width: calc(100vw - 4vmin - 22vw); }
+@media (max-width: 768px) {
+    .reveal .slides section.title {
+        height: calc(100vh - 4vmin);
+        margin: 2vmin;
+        width: calc(100vw - 4vmin); }
+}
+
+#about {
+    background-image: url('../images/eaglebluffs.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+#about a {
+    color: rgb(51, 51, 51);
+}
+#about aside {
+    background-color: rgba(255, 255, 255, .8);
+    color: #000;
+    float: right;
+    font-size: 1.5em;
+    padding: 5vmin;
+}
+#about aside hr {
+    color: rgba(0,0,0, 0.075);
+    margin: 2.5vmin 0;
+}
+#about aside ul {
+    display: block;
+    font-size: inherit;
+    list-style: none;
+    margin: 2.5vmin 0 0;
+    width: auto;
+}
+#about .projects {
+    text-align: center;
+}
+#about .accounts a .fa + span,
+#about .projects a {
+    /*text-decoration: underline rgba(51, 51, 51, 0.1);*/
+}
+#about .accounts a:hover .fa + span,
+#about .projects a:hover {
+    text-decoration: underline rgba(51, 51, 51, 0.65);
+}
+#about .accounts {
+    display: grid;
+    justify-content: center;
+}
+#about .accounts a {
+    display: flex;
+    align-items: baseline;
+}
+#about .accounts .fa {
+    margin-right: 0.25ex;
+    width: 1.8ex;
+}
+
+.tool img {
+    height: 70px;
+    position: relative;
+    top: 15px;
+}
+
+.tool td {
+    padding: 2em 0 0 3em;
+}
+
+.tool td.wave img {
+    height: 60px;
+    margin-left: 10px;
+}
+
+.tool th {
+padding-bottom: 5px;
+}
+
+.tool td {
+    padding-bottom: 0;
+}
+
+.toolname {
+    float: left;
+    padding-top: 70px;
+    font-size: 24px;
+}
+
+.tool .content {
+align-self: flex-start;
+}
+
+.tool table {
+    margin-top: 5em;
+}
+
+.grid-wrapper ul {
+    font-size: 18px;
+    color: #66646B;
+    align-self: left;
+    justify-self: left;
+}
+
+.grid-wrapper ul li {
+    font-size: 18px;
+    margin-left: 1.3em;
+}
+
+
+#ga-module {
+    background-image: url("../images/ga-module.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+.commands table {
+    margin: 0;
+}
+.commands table th {
+    text-align: right;
+}
+.commands table th, .commands table td {
+    border-bottom: none;
+}
+.commands table td + td {
+    opacity: 0.5;
+}
+
+.commands table + figure {
+    margin-top: 2em;
+}
+
+#demo img {
+    margin: auto;
+    max-height: 50vmin;
+    max-width: 50vmin;
+    width: 100%;
+    height: 100%;
+}
+
+#title .content {
+    display: block;
+}
+
+#end .content {
+    margin-top: auto;
+    text-align: center;
+    font-size: 150%;
+}
+
+@media (orientation: portrait) {
+    .only-landscape {
+        display: none;
+    }
+}
+
+.description ol {
+    color: #66646B;
+}
+
+.machine {
+    color: #66646B;
+}
+
+.profile .details p {
+    font-size: 60px;
+}
+
+.subsection .details {
+    color: #000;
+    font-size: 60px;
+    min-width: 400px;
+}
+
+.subsection ol {
+    color: #000;
+    font-size: 48px;
+    min-width: 400px;
+}

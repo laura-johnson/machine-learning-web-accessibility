@@ -1,0 +1,373 @@
+<!doctype html>
+<html prefix="og: http://ogp.me/ns#">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Machine Learning and Web Accessibility: Opportunities and Challenges according to Six Experts</title>
+
+	<link rel="stylesheet" href="lib/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/myplanet.css">
+	<link rel="stylesheet" href="css/presentation.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/highlight-github.css">
+
+	<link rel="icon" href="lib/myplanet/logo/radiant-orange/mark-knockout.svg"/>
+
+	<meta property="og:url" content="https://laura-johnson.github.io/machine-learning-web-accessibility/" />
+	<meta property="og:title" content="What's on the Horizon for Web Accessibility: How Machine Learning can Aid in Testing and Remediation" />
+
+	<script src="js/reveal-print.js"></script>
+</head>
+<body>
+<div class="reveal pattern--molecules">
+	<div class="slides">
+			<section class="title" id="title">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo logo--full"><span class="visually-hidden">Myplanet</span></div>
+					</div>
+					<div class="content">
+						<h1>Machine Learning and Web Accessibility</h1>
+						<h2>Opportunities and Challenges according to Six Experts</h2>
+						<h3>University of Guelph Accessibility Conference</h3>
+					</div>
+					<div class="credit">
+						<hr>
+						<div class="label">Presented By</div>
+						<div class="name">Laura Johnson (@<a href="https://twitter.com/ltrain_johnson">ltrain_johnson</a>)</div>
+					</div>
+					<a class="presentation-url" href="https://laura-johnson.github.io/ml-web-accessibility">https://laura-johnson.github.io/machine-learning-web-accessibility</a>
+				</div>
+	        </section>
+		<!-- Team page can accommodate one or two profiles. -->
+		<section class="team" id="team">
+			<div class="grid-wrapper">
+				<div class="header">
+					<div class="logo"></div>
+					<div class="section">Me</div>
+				</div>
+				<div class="content">
+					<div class="profile">
+						<div class="basics">
+							<img src="images/laura-headshot.jpg" alt="Portrait of Laura Johnson">
+							<div class="name">Laura Johnson</div>
+							<div class="role">Senior Software Developer at Myplanet</div>
+						</div>
+						<div class="details">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<p><-- Software Developer</p>
+                            <aside class="notes">
+                                <ol>
+                                    <li>Myplanet was a startup company 11 years ago, more established now, specialize in applications for workplace tools in addition to web experiences</li>
+                                    <li>We make applications using full-stack javascript, and for a lot of web projects we use a CMS called Drupal, which is open source, and that's what I specialize in.</li>
+                                    <li>We have an emphasis on smarter interfaces (assistive, agentive, push to use AI and other cutting edge technologies like voice UX, Virtual Reality)</li>
+                                    <li>So, AI is on our radar as a possibility for incorporating into various projects</li>
+                                    <li>My manager aty Myplanet is the Director of Technology, Everett Zufelt</li>
+                                    <li>Working with Everett, talking with him about accessibility challenges, seeing him do what he calls public shamings</li>
+                                    <li>Wrote automated accessibility testing tools article, comparison and talked about how to incorporate them into a developer workflow, Everett put me in touch with Jared Smith and Karl Groves</li>
+                                    <li>After publishing it, Everett and I had an email exchange with Jared Smith</li>
+                                    <li>Said “we’re not doing any significant work in the machine learning area but this is something we want to engage more in, we have looked at funding sources that could make this possible and I’d be happy to hear any ideas that you have</li>
+                                    <li>This got me really interested, I started talking to Everett about the possibility of an article</li>
+                                    <li>It seemed like people are interested and want to hear ideas, and there is possible funding, so let's get the ideas flowing.</li>
+                                    <li>He suggested that we interview a bunch of experts in the field to find out what is going on in machine learning and web accessibility, what are people working on, what are the possibilities, what are the challenges?</li>
+                                </ol>
+                            </aside>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>
+        <section class="subsection">
+            <div class="grid-wrapper">
+                <div class="header">
+                    <div class="logo"></div>
+                    <div class="section">Background</div>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                    <td><div class="details">Article --></div></h2>
+                    </td>
+                    <td><img src="images/article-screenshot.png" alt="Screenshot of article entitled Making the Web More Accessible Using Machine Learning"></td>
+                </table>
+                <aside class="notes">
+                        <ol>
+                            <li>I'm showing the illustration that accompanies my article, which is called "Making the Web More Accessible Using Machine Learning</li>
+                            <li>The illustration was made by a graphic designer at Myplanet, and it depicts a man wearing glasses and who is using a cane reaching out toward what is clearly a webpage, and it has some icons around it which are meant to represent various disabilities, such as an eye and a brain, there are also some graphs which one would infer represent data.</li>
+                            <li>It's kind of an odd image, but hey, it's not easy to represent these abstract concepts as an illustration</li>
+                            <li>When I started interviewing, I used my same contacts from the Automated Accessibility testing tools article and I asked them for more contacts. People are generally really interested and happy to talk about it.</li>
+                                <li>Sina Bahram, President and Founder of Prime Access Consulting, Inc, which is an accessibility consulting company</li>
+                                <li>Denis Boudreau, Principal Web Accessibility Consultant at Deque, which is the organization that made the automated testing tool and API called Axe, which is what Google uses in their Litehouse tool</li>
+                                <li>Karl Groves, Founder and President of Tenon.io, another big testing tool and API</li>
+                                <li>David MacDonald, President of CanAdapt and a 16 year veteran with WCAG</li>
+                                <li>Jared Smith, Associate Developer of WebAIM and Primary Developer of WAVE, another big automated testing tool</li>
+                                <li>Everett Zufelt, Director of Technology at Myplanet</li>
+                        </ol>
+                </aside>
+            </div>
+        </section>
+        <section class="subsection">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">The Data Problem</div>
+                    </div>
+                    <table cellpadding="0" cellspacing="0">
+                        <td><img src="images/data.jpeg" alt="Google Cloud API Screenshot"></td>
+                    </table>
+                    <aside class="notes">
+                        <ol>
+                            <li>In the most basic terms, machine learning involves training an algorithm. You have to feed it a -lot- of data, and the data is classified using whatever classifiers you define. The classic example is hot dog or not hot dog. You feed it images and classify them as hot dog or not hot dog. It begins to detect the patterns that humans know instinctively that define what a hotdog is. The more images you feed it, it is able to guess with increasing certainty whether or not there is a hot dog in the image. But to get to say 80% certainty takes billions of rows of data.</li>
+                            <li>When I interviewed the experts, one of the first things I learned is that the major hurdle to doing a lot of the things we would love to do with a machine learning algorithm for accessibility is due to a shortage of well-annotated data.</li>
+                            <li>We would love it if such a tool could recognize components on a page that people interact with and let us know what the accessibility issues are and how to fix them.</li>
+                            <li>Wouldn't it be great if an algorithm could say "I can see that you're using a mega menu, and it's probably not accessible for this reason, this reason and that reason.</li>
+                            <li>We can't do that right now, and we have a mountain of work to do before we can even think about doing it.</li>
+                            <li>When a company like Google wants to put together various models, ie computer vision models, they have a great deal of data to work with (billions of rows of data)</li>
+                            <li>With that level of data, it’s straightforward to use best practices within machine learning to get good classifiers.</li>
+                            <li>For accessiblity, we have billions of webpages. But they are not annotated. We don't know which ones contain accessibility issues. That's what we need in order to be able to train a machine to identify them.</li>
+                            <li>Google has been amassing this data over years, with the help of the whole internet. It is still amassing data.</li>
+                            <li>For example, when you use Re-Captcha, which is the thing that tests to see if you're a robot before you submit a form, it shows you a bunch of photos, and tells you to pick out the stop signs. When you submit the form, you are giving it data.</li>
+                            <li>Google has the advantage with images that most people can identify a stop sign. But I would say that most people don't know whether a web page is accessible. So in order for us to have a dataset, we would need to have trained people to identify the issues on billions of webpages. Where do you start? Obviously that is a massive undertaking.</li>
+                            <li>Some of the experts suggested that perhaps we could use Analytics, or train a bot to step through webpages and flag when there is a keyboard trap or a massive inefficiency in navigation. And those techniques could get us closer, but we don't really know what quality we would end up with and undertaking something like that in itself would be a huge job.</li>
+                            <li>So given that we won't be able to solve that any time soon that we know of, what are the types of things you can do to solve sub problems within the space, to help build that data, or to at least warn about issues without necessarily being able to fix them?</li>
+                            <li>I'm going to talk about a few possibilities, the first is, we take well-tested algorithms that have already been developed by Google, Microsoft, Facebook, etc. and integrate them into assistive technologies and CMS.</li>
+                        </ol>
+                    </aside>
+                </div>
+            </section>
+            <section class="subsection">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">Real-time Remediation</div>
+                    </div>
+                    <div class="header">
+                            <table cellpadding="0" cellspacing="0">
+                                    <td><img src="images/webpage-labeled.png" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
+                                </table>
+                    </div>
+                    <aside class="notes">
+                        <ol>
+                            <li>If an AI-based browser extension could label and group the different regions of a page, it would be enormously helpful for screen reader users</li>
+                            <li>Could actually extract the content and rearrange in a way that is not only accessible, but ideal.</li>
+                            <li>Users of diverse abilities would be able to easily navigate web content regardless of how semantically well structured it was in the first place</li>
+                            <li>Would help to level the playing field for AT. Currently many users rely on outdated assistive technology that isn't compatible with the latest advancements, including ARIA and HTML5 elements.</li>
+                        <li>This means that many accessibility-minded organizations have to straddle the line between being both cutting edge and backwards compatible. This adds significant costs and for organizations without the mandate or budget, it tends to be deprioritized</li>
+                            <li>Users with outdated technology are often economically disadvantaged and assistive technology can be expensive. So they are facing a double challenge of trying to use the internet with AT and of using outdated technology. The ability to simplify web markup and remove at least some of this secondary barrier</li>
+                        </ol>
+                    </aside>
+                </div>
+            </section>
+            <section class="subsection">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">New tools</div>
+                    </div>
+                    <h2>High-Level Indicator</h2>
+                    <div class="description">
+                            <table cellpadding="0" cellspacing="0">
+                                    <td><img src="images/Smileys.gif" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
+                                </table>
+                    </div>
+                    <aside class="notes">
+                        <ol>
+                            <li>The idea behind the high-level indicator is that it can detect problems that current automated tools and humans can’t</li>
+                            <li>A tool that suggests likelihood of errors would be helpful. "Today, rulesets can't say "I'm fairly confident that your mega menu is not accessible". That's not going to come up on the wave evaluator. That adds a lot of value because it not becomes an educational tool rather than a simple checklist of things that are wrong.</li>
+                            <li>Could warn end users of potential issues on a website. As a browser extension, it could display a warning: "This looks like the type of website that will give you problems with forms"</li>
+                            <li>Could be used as one of many signals that Google or other search algorithms use to rank a page: Note that Google and other engines already tend to rank more accessible pages higher. A more accessible website is easier for a machine to search and understand, further reinforcing the business value of accessibility and inclusive design. </li>
+                            <li>Project owners or executives could use it as a tool for selecting technologies. In the Federal gov't in the US and Canada, people pay a lot of money for commercial, off the shelf products. Imagine that the choice is between two CMS and this hypothetical tool has revealed that one of them produces websites that have certain accessibility risk patterns associated with them. They can then decide to accept the risks or to avoid them. This kind of informed decision making could save countless dollars and headaches for both providers and end users.</li>
+                            <li>A secondary goal might be to drive innovation. If companies know that businesses and organizations aren't using their tool because it has accessibility problems, they are going to want to fix the problem.</li>
+                        </ol>
+                    </aside>
+                </div>
+            </section>
+        <section class="subsection">
+            <div class="grid-wrapper">
+                <div class="header">
+                    <div class="logo"></div>
+                    <div class="section">Image Recognition</div>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                    <td><img src="images/GoogleCloudAPI.png" alt="Google Cloud API Screenshot"></td>
+                </table>
+                <aside class="notes">
+                    <ol>
+                        <li>Image recognition may be the best known form of ML tool out there, and there are are several different forms of it.</li>
+                        <li>This is a screenshot of the Google Cloud Vision API. You can go here and demo it by uploading an image.</li>
+                        <li>I uploaded a picture of my Dad's band from when he was 16 years old, which someone sent to me recently and is currently my favourite photo.</li>
+                        <li>You can see that it returns a bunch of terms. As a developer, you could do an integration with this API that added these terms as tags for uploaded images.</li>
+                        <li>Also has this safe search feature which is designed to filter out 'racy' images.</li>
+                    </ol>
+                </aside>
+            </div>
+        </section>
+        <section class="subsection">
+                <div class="grid-wrapper">
+                    <div class="header">
+                        <div class="logo"></div>
+                        <div class="section">Image Recognition (cont'd)</div>
+                    </div>
+                    <table cellpadding="0" cellspacing="0">
+                        <td><img src="images/CaptionBotResults.png" alt="Screenshot of CaptionBot results"></td>
+                    </table>
+                    <aside class="notes">
+                        <ol>
+                            <li>This is a screenshot of CaptionBot, which is a tool developed by Microsoft Cognitive Services, which has a suite of AI-driven tools</li>
+                            <li>I uploaded the same image of my Dad's band and this is the result</li>
+                            <li>This is a really good illustration of why an AI generated description should never be used in the place of a human generated description.</li>
+                            <li>The CaptionBot came out in late 2016, and people had some fun at its expense, because it really is fun to laugh at AI</li>
+                        </ol>
+                    </aside>
+                </div>
+            </section>
+            <section class="subsection">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section">Image Recognition (cont'd)</div>
+                        </div>
+                        <table cellpadding="0" cellspacing="0">
+                            <td><img src="images/CaptionBot-article.png" alt="Screenshot of CaptionBot results"></td>
+                        </table>
+                        <aside class="notes">
+                            <ol>
+                                <li>This is a screenshot of an article in the Guardian about CaptionBot, and it reads:</li>
+                                <li>They're talking about another experiment in which Microsoft created a Twitter chatbot that learned from interactions with Twitter users.</li>
+                                <li>Twitter taught the bot to be full-on racist. The bot was a Trump supporter by the end of the day, believed in a lot of conspiracy theories, including that Hitler invented Atheism and it tweeted some really awful stuff and Microsoft quietly retired it.</li>
+                                <li>I felt really bad for the team that created the bot, picturing them excitedly launching it that morning and watching it with increasing horror throughout the day</li>
+                                <li>With CaptionBot, people had fun uploading images of various important historical events and having CaptionBot caption them</li>
+                                <li>Someone uploaded an iconic photo of the moon landing and CaptionBot said "I'm not really confident, but I think it's a man standing on top of a dirt field".</li>
+                                <li>If you look at the upload interface (go back one slide), you'll see that there is this rating system so that you can give feedback to the CaptionBot. This is a critical piece of a lot of AI designs, the ability to get feedback which it can use to improve. So we can infer and hope that the CaptionBot is improving.</li>
+                            </ol>
+                        </aside>
+                    </div>
+                </section>
+                <section class="subsection">
+                        <div class="grid-wrapper">
+                            <div class="header">
+                                <div class="logo"></div>
+                                <div class="section">Image Recognition (cont'd)</div>
+                            </div>
+                            <table cellpadding="0" cellspacing="0">
+                                <td><img src="images/CaptionBotElements.png" alt="Screenshot of CaptionBot results"></td>
+                            </table>
+                            <aside class="notes">
+                                <ol>
+                                    <li>This is a screenshot that talks about the different AI tools that were integrated to create the CaptionBot.</li>
+                                    <li>Integrating computer vision with other algorithms is one of the ways that the algorithms are being improved.</li>
+                                    <li>It has to be said that image descriptions have come a long way. Early machine generated image descriptions would say “may contain” “two cats” or “may contain” body of water. You can see that the CaptionBot descriptions are much better than that.</li>
+                                    <li>Facebook is trying now to take it to the next level by combining image recognition with text recognition and facial recognition, so that it can get context from recent conversations, your friend list, events you have attended</li>
+                                    <li>Microsoft also has a new project called the Microsoft Ability Initiative in which they are working to create a captioning algorithm that is specifically geared to blind or low vision users. So that will hopefully improve on the types of captions that the CaptionBot delivers</li>
+                                    <li>So what can we do with these tools from an accessibility standpoint?</li>
+                                </ol>
+                            </aside>
+                        </div>
+                    </section>       
+        <section class="subsection">
+            <div class="grid-wrapper">
+                <div class="header">
+                    <div class="logo"></div>
+                    <div class="section">Automated Accessibility Testing Tools</div>
+                </div>
+                <table cellpadding="0" cellspacing="0">
+                    <td><img src="images/screenshot-wave.png" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
+                </table>
+                <aside class="notes">
+                    <ol>
+                        <li>How many of you have heard of automated accessibility testing tools?</li>
+                        <li>This is a screenshot of the report section of the WAVE browser extension. It is one of the oldest and most venerated extensions. It's my personal favourite, although it gets made fun of a lot because it has sort of this old style interface and the icons look like they were made in the early 90s.</li>
+                        <li>So you navigate to the web page that you want to test on and click the WAVE button, and it generates this report. You can click on it, see inline errors, etc</li>
+                        <li>They are often an essential part of an accessibility tester’s toolkit</li>
+                        <li>Developers and companies or organizations often use them too</li>
+                        <li>In simplest form, you can run them as a browser extension. So you navigate to a page and click on the browser extension and it gives you a beautiful report that shows you accessibility issues, both warnings and errors. You can then go and fix the errors or have a developer fix them and then you can sleep soundly knowing that you have a beautiful, accessible website. The caveat with that is, they only catch about 25% of all errors. So you can’t really sleep soundly. But the good news is that we can probably improve this percentage by integrating machine learning.</li>
+                        <li>They only catch about 25% of all errors</li>
+                    </ol>
+                </aside>
+            </div>
+        </section>
+			<section class="subsection">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo"></div>
+                        <div class="section">Tenon.io</div>
+					</div>
+						<div class="header">
+                                <table cellpadding="0" cellspacing="0">
+                                        <td><img src="images/tenon-results.png" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
+                                    </table>
+                            <aside class="notes">
+                                <ol>
+                                    <li>This is a screenshot of the report generated by Tenon.io, another web accessibility testing tool.</li>
+                                    <li>Currently, ATT will give you an error if there is no alternative text for an image. But it can’t tell you if alternative text is inaccurate or inadequate.</li>
+                                    <li>What if the tool could: a. tell if your description was likely inaccurate or inadequate? b. Make suggestions?</li>
+                                    <li>This would be a huge help to accessibility testers who are doing manual remediation</li>
+                                    <li>Ideally you would have a feedback mechanism so that people using the tool have the option of rating the caption that is returned, so that the tool can keep improving.</li>
+                                </ol>
+                            </aside>
+						</div>
+				</div>
+            </section>
+            <section class="subsection">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section">CMS</div>
+                        </div>
+                            <div class="header">
+                                    <table cellpadding="0" cellspacing="0">
+                                            <td><img src="images/drupal-media.png" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
+                                        </table>
+                                <aside class="notes">
+                                    <ol>
+                                        <li>This is a screenshot of the interface for uploading and captioning an image in Drupal, which is a content management system.</li>
+                                        <li>Most of the time, CMS don't contain a lot of information or guidelines to help authors create accessible content.</li>
+                                        <li>For content management systems, there is a specific set of standards that have been created to help create accessible authoring tools.</li>
+                                        <li>That standard is called ATAG, which is short for Authoring Tool Accessibility Guidelines</li>
+                                        <li>What if we incorporated an AI-generated description as a suggestion in the caption field?</li>
+                                        <li>This could be done in addition to providing helpful guidelines and text here.</li>
+                                        <li>I am not suggesting that I think the CaptionBot caption should be used. I would hypothesize that if there was a suggestion here that was not quite correct, it would prompt the person to correct it, but they would be less likely to just leave that field blank or put garbage text in there.</li>
+                                    <li>Would it drive people crazy? It's hard to say. We'll have to see. For me, I think I would find it really amusing to see the CaptionBot caption there.</li>
+                                    </ol>
+                                </aside>
+                            </div>
+                    </div>
+                </section>
+        <section class="subsection">
+            <div class="grid-wrapper">
+                <div class="header">
+                    <div class="logo"></div>
+                    <div class="section">The way forward</div>
+                </div>
+                <div class="description">
+                        <table cellpadding="0" cellspacing="0">
+                                <td><img src="images/banana-sharpener.gif" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
+                            </table>
+                    <aside class="notes">
+                        <ol>
+                            <li>This is an animated gif of the muppet scientist beaker creating a banana sharpener</li>
+                            <li>What it represents is that the way forward is not going to provide perfect solutions right away. They are always going to be works in progress.</li>
+                            <li>I don't think we should wait until these algorithms are finished before we begin incorporating them into various tools for the purpose of improving accessibility.</li>
+                            <li>We should incorporate them, and trust that the algorithms will improve and we'll fine tune the interfaces until we have something really useful.</li>
+                            <li>Okay, are there any questions?</li>
+                        </ol>
+                    </aside>
+                </div>
+            </div>
+        </section>
+		<section class="end color--radiant" id="end-radiant">
+			<div class="logo-wrapper">
+				<div class="logo"><span class="visually-hidden">Myplanet</span></div>
+			</div>
+		</section>
+	</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/reveal-init.js"></script>
+</body>
+</html>
