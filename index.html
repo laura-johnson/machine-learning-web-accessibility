@@ -144,11 +144,9 @@
                         <div class="logo"></div>
                         <div class="section">Real-time Remediation</div>
                     </div>
-                    <div class="header">
                             <table cellpadding="0" cellspacing="0">
                                     <td><img src="images/webpage-labeled.png" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
                                 </table>
-                    </div>
                     <aside class="notes">
                         <ol>
                             <li>If an AI-based browser extension could label and group the different regions of a page, it would be enormously helpful for screen reader users</li>
@@ -165,14 +163,12 @@
                 <div class="grid-wrapper">
                     <div class="header">
                         <div class="logo"></div>
-                        <div class="section">New tools</div>
+                        <div class="section">High-Level Indicator</div>
                     </div>
-                    <h2>High-Level Indicator</h2>
-                    <div class="description">
                             <table cellpadding="0" cellspacing="0">
-                                    <td><img src="images/Smileys.gif" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
+                                    <td><img src="images/generic-website.jpg" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
                                 </table>
-                    </div>
+
                     <aside class="notes">
                         <ol>
                             <li>The idea behind the high-level indicator is that it can detect problems that current automated tools and humans can’t</li>
@@ -185,6 +181,28 @@
                     </aside>
                 </div>
             </section>
+            <section class="subsection">
+                    <div class="grid-wrapper">
+                        <div class="header">
+                            <div class="logo"></div>
+                            <div class="section">Content Simplification</div>
+                        </div>
+                        <table cellpadding="0" cellspacing="0">
+                            <td><img src="images/content-clarifier.png" alt="Google Cloud API Screenshot"></td>
+                        </table>
+                        <aside class="notes">
+                            <ol>
+                                <li>Some of the other possibilities for AI for accessibility are integration of existing AI-driven APIs.</li>
+                                <li>One that came up as a possibility is using Natural Language Processing to simplify and/or summarize content.</li>
+                                <li>This could potentially be useful for people with cognitive disabilities.</li>
+                                <li>I'm showing a screenshot from an IBM tool called Content Clarifier. The tool simplifies text by replacing more complicated words  with simple words.</li>
+                                <li>This has potential to be used as a browser extension, or could be incorporated as an option in CMS, where when you choose your language, one of the options could be simplified language.</li>
+                                <li>There are other tools out there that can be used to extract the most important sentences of a document in order to provide a summary. This could be useful for people with learning disabilities, or even just for people who don't have a lot of time to read whole articles. They can get a summary and use that to determine if they need to read the whole thing.</li>
+                                <li>Potential downsides might be: do you trust an algorithm to correctly extract meaning? Could this lead to a lot of inconsistent information out there?</li>
+                            </ol>
+                        </aside>
+                    </div>
+                </section>
         <section class="subsection">
             <div class="grid-wrapper">
                 <div class="header">
@@ -201,6 +219,7 @@
                         <li>I uploaded a picture of my Dad's band from when he was 16 years old, which someone sent to me recently and is currently my favourite photo.</li>
                         <li>You can see that it returns a bunch of terms. As a developer, you could do an integration with this API that added these terms as tags for uploaded images.</li>
                         <li>Also has this safe search feature which is designed to filter out 'racy' images.</li>
+                        <li>Image recognition is improving in various ways. One of the improvements is that it is being combined with Natural Language Processing tools to form captioning tools.</li>
                     </ol>
                 </aside>
             </div>
@@ -261,54 +280,34 @@
                                     <li>Integrating computer vision with other algorithms is one of the ways that the algorithms are being improved.</li>
                                     <li>It has to be said that image descriptions have come a long way. Early machine generated image descriptions would say “may contain” “two cats” or “may contain” body of water. You can see that the CaptionBot descriptions are much better than that.</li>
                                     <li>Facebook is trying now to take it to the next level by combining image recognition with text recognition and facial recognition, so that it can get context from recent conversations, your friend list, events you have attended</li>
+                                    <li>This raises the possibility that improving a caption by scanning the surrounding content for meaning will likely be available to us at some point, although I don't know of any APIs that offer that feature now.</li>
                                     <li>Microsoft also has a new project called the Microsoft Ability Initiative in which they are working to create a captioning algorithm that is specifically geared to blind or low vision users. So that will hopefully improve on the types of captions that the CaptionBot delivers</li>
                                     <li>So what can we do with these tools from an accessibility standpoint?</li>
                                 </ol>
                             </aside>
                         </div>
                     </section>       
-        <section class="subsection">
-            <div class="grid-wrapper">
-                <div class="header">
-                    <div class="logo"></div>
-                    <div class="section">Automated Accessibility Testing Tools</div>
-                </div>
-                <table cellpadding="0" cellspacing="0">
-                    <td><img src="images/screenshot-wave.png" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
-                </table>
-                <aside class="notes">
-                    <ol>
-                        <li>How many of you have heard of automated accessibility testing tools?</li>
-                        <li>This is a screenshot of the report section of the WAVE browser extension. It is one of the oldest and most venerated extensions. It's my personal favourite, although it gets made fun of a lot because it has sort of this old style interface and the icons look like they were made in the early 90s.</li>
-                        <li>So you navigate to the web page that you want to test on and click the WAVE button, and it generates this report. You can click on it, see inline errors, etc</li>
-                        <li>They are often an essential part of an accessibility tester’s toolkit</li>
-                        <li>Developers and companies or organizations often use them too</li>
-                        <li>In simplest form, you can run them as a browser extension. So you navigate to a page and click on the browser extension and it gives you a beautiful report that shows you accessibility issues, both warnings and errors. You can then go and fix the errors or have a developer fix them and then you can sleep soundly knowing that you have a beautiful, accessible website. The caveat with that is, they only catch about 25% of all errors. So you can’t really sleep soundly. But the good news is that we can probably improve this percentage by integrating machine learning.</li>
-                        <li>They only catch about 25% of all errors</li>
-                    </ol>
-                </aside>
-            </div>
-        </section>
 			<section class="subsection">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo"></div>
-                        <div class="section">Tenon.io</div>
+                        <div class="section">Automated Accessibility Testing Tools</div>
 					</div>
-						<div class="header">
                                 <table cellpadding="0" cellspacing="0">
                                         <td><img src="images/tenon-results.png" alt="Screenshot of WAVE automated accessibility testing report using DrupalCon Seattle 2019 website"></td>
                                     </table>
                             <aside class="notes">
                                 <ol>
-                                    <li>This is a screenshot of the report generated by Tenon.io, another web accessibility testing tool.</li>
+                                    <li>How many of you have used automated accessibility testing tools?</li>
+                                    <li>In simplest form, you can run them as a browser extension. So you navigate to a page and click on the browser extension and it gives you a beautiful report that shows you accessibility issues, both warnings and errors. You can then go and fix the errors or have a developer fix them and then you can sleep soundly knowing that you have a beautiful, accessible website. The caveat with that is, they only catch about 25% of all errors. So you can’t really sleep soundly. But the good news is that we can probably improve this percentage by integrating machine learning.</li>
+                                    <li>They only catch about 25% of all errors</li>
+                                    <li>This is a screenshot of the report generated by Tenon.io, a web accessibility testing tool.</li>
                                     <li>Currently, ATT will give you an error if there is no alternative text for an image. But it can’t tell you if alternative text is inaccurate or inadequate.</li>
                                     <li>What if the tool could: a. tell if your description was likely inaccurate or inadequate? b. Make suggestions?</li>
                                     <li>This would be a huge help to accessibility testers who are doing manual remediation</li>
                                     <li>Ideally you would have a feedback mechanism so that people using the tool have the option of rating the caption that is returned, so that the tool can keep improving.</li>
                                 </ol>
                             </aside>
-						</div>
 				</div>
             </section>
             <section class="subsection">
